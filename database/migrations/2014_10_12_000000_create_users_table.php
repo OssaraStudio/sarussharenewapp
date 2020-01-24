@@ -26,12 +26,12 @@ class CreateUsersTable extends Migration
 
             $table->string('user_type')->default('user');
 
-            $table->json('liked_posts')->nullable();
-            $table->json('disliked_posts')->nullable();
-            $table->json('favourite_posts')->nullable();
-            $table->json('liked_categories')->nullable();
+            $table->text('liked_posts')->nullable();
+            $table->text('disliked_posts')->nullable();
+            $table->text('favourite_posts')->nullable();
+            $table->text('liked_categories')->nullable();
 
-            $table->json('preferences')->nullable();
+            $table->text('preferences')->nullable();
             $table->string('avatar')->nullable();
 
             $table->rememberToken();
